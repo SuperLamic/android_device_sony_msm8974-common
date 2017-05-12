@@ -47,7 +47,7 @@ PRODUCT_PACKAGES += \
 # Specific apps
 PRODUCT_PACKAGES += \
     Snap \
-    Gello
+    Jelly
 
 # Display
 PRODUCT_PACKAGES += \
