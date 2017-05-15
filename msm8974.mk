@@ -37,10 +37,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=1
 
-# Compatibility with older blobs
-PRODUCT_PACKAGES += \
-    libstlport
-
 # Specific apps
 PRODUCT_PACKAGES += \
     Snap \
