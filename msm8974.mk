@@ -135,6 +135,11 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
      media.stagefright.legacyencoder=true \
      media.stagefright.less-secure=true
 
+# Time
+PRODUCT_PACKAGES += \
+    timekeep \
+    TimeKeep
+
 # USB OTG
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.isUsbOtgEnabled=true

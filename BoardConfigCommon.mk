@@ -14,6 +14,13 @@
 
 BOARD_VENDOR := sony
 
+# Use Snapdragon LLVM Compiler if enabled by device
+ifneq ($(TARGET_USE_SDCLANG),true)
+SDCLANG := true
+SDCLANG_PATH := prebuilts/clang/linux-x86/host/sdclang-3.8/bin
+SDCLANG_LTO_DEFS := device/qcom/common/sdllvm-lto-defs.mk
+endif
+
 # Include path
 TARGET_SPECIFIC_HEADER_PATH += device/sony/msm8974-common/include
 
@@ -101,6 +108,3 @@ include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
     device/sony/msm8974-common/sepolicy
-
-# Time
-BOARD_USES_QC_TIME_SERVICES := true
