@@ -99,6 +99,8 @@ TARGET_POWERHAL_VARIANT := qcom
 # RIL
 TARGET_RIL_VARIANT := caf
 
+TARGET_SYSTEM_PROP += device/sony/shinano-common/system.prop
+
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 
