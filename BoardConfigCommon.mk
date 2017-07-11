@@ -71,6 +71,11 @@ BOARD_HARDWARE_CLASS += device/sony/msm8974-common/cmhw
 # Font
 EXTENDED_FONT_FOOTPRINT := true
 
+# GPS definitions for Qualcomm solution
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
+BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
+TARGET_NO_RPC := true
+
 # Graphics
 USE_OPENGL_RENDERER := true
 TARGET_USES_ION := true
